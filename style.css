@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Copy the following code to Blogger */
+
+.custom-readmore {
+  background: transparent;
+  border: 2px solid #333;
+  padding: 12px 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-readmore a {
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.custom-readmore::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 64px;
+  background: red;
+  left: -56px;
+  top: -11px;
+  transform: rotate(25deg);
+  opacity: 0.1;
+  transition: 400ms;
+}
+
+.custom-readmore:hover::after {
+  left: 100%;
+  opacity: 1;
+}
